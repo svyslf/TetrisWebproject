@@ -1,0 +1,255 @@
+.nav {
+    margin: 0px;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    }
+    
+ul {
+    overflow: auto;
+    list-style-type: none;
+    background-color: blue;
+    padding-left: 0%;
+    height: auto;
+    margin-bottom: 1!important;
+    }
+li {
+    float: right;
+    }
+
+li a {
+    display: inline-block;
+    color: #DDDDDD;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+li a:hover {
+    background-color: rgb(112, 112, 245);
+    }
+
+html, body {
+    margin: 0;
+    overflow: hidden;
+}
+p {
+    text-align: center;
+    margin: 0 ;
+    color: #111111;
+    font-family:'HeartbitBold', Arial, sans-serif;
+    font-size: 30px;
+}
+#scoretext, #score {
+    text-align: center;
+    margin: 0 ;
+    color: #DDDDDD;
+    font-family:'HeartbitBold', Arial, sans-serif;
+    font-size: 30px;
+}
+
+.main {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(tetrisimg.png);
+    background-repeat: no-repeat;
+    background-size: 95% auto;
+    background-position: center center;
+    height: 120vh;
+}
+
+#backgroundvideo {
+    z-index: -1;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.styleform {
+    background: #c7c7c7;
+    font-family: 'HeartbitBold', Arial, sans-serif;
+    color: #111111;
+    font-size: 40px;
+    position: absolute;
+    min-width: 300px;
+    box-shadow: 5px 5px 5px; 
+}
+
+div.tetris-bg {
+    background-color: #c7c7c7;
+    background-image: url(tetrisgrid.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    margin-top: 20px;
+    width: 300px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 5px;
+}
+
+div.leaderboard{
+    background-color: #c7c7c7;
+    display: table;
+    margin-top: 30px;
+    justify-content: center;
+    position: absolute;
+    width: 300px;
+    height: 600px;
+    box-shadow: 5px 5px 5px;
+
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid #c7c7c7;
+    border-spacing: 2px;
+    font-family: 'HeartbitBold', Arial, sans-serif;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    
+}
+td, th {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #c7c7c7;
+    padding: 10px 20px;
+  }
+  
+  th {
+    color: #DDDDDD;
+    background-color: blue;
+  }
+  
+  td {
+    text-align: center;
+    height: 20px;
+  }
+  
+  tr:nth-child(even) td {
+    background-color: #AAAAAA;
+  }
+  
+  tr:nth-child(odd) td {
+    background-color: #c7c7c7;
+  }
+  
+
+
+#I, #T, #L, #O, #Z, #S {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    box-shadow:0px 0px 0px 1px #111111 inset;
+    display: block;   
+}
+
+
+.formcaption {
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 10%;
+}
+@font-face {
+    font-family: 'HeartbitBold';
+    src: url(./fonts/HeartbitBold-Z7jq.otf) format("opentype");
+}
+
+div.form {
+    position: relative;
+    font-family:'HeartbitBold', Arial, sans-serif;
+    color: #111111;
+    display: flex;
+    justify-content: center;
+}
+
+div.form input {
+    margin: 0 auto;
+    display: block;
+}
+div.form a {
+    font-size: 30px;
+}
+button {
+    font-family:'HeartbitBold', Arial, sans-serif;
+    font-size: large;
+    height: 25px;
+}
+input::placeholder{
+    font-family:'HeartbitBold', Arial, sans-serif;
+}
+input[type="text"] {
+    font-family:'HeartbitBold', Arial, sans-serif;
+}
+h1 {
+    position: relative;
+    color: #111111;
+    font-family:'HeartbitBold', Arial, sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+
+div.form label, button  {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+
+div.form label {
+    font-size: 20px;
+}
+
+div.radioanswers {
+    text-align: center;
+}
+
+.error {
+    border-radius: 20px;
+    position: relative;
+    animation: blinker 1s linear infinite;
+    position: absolute;
+    font-family:'HeartbitBold', Arial, sans-serif;
+    background-color: #881a14;
+    color: #DDDDDD;
+    font-size: 15px;
+    text-align: center;
+}
+@keyframes blinker {
+    50% {
+      background-color: #0074D9;
+    }
+  }
+
+
+.main #start {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 200px;
+    z-index: 1;
+    width:135px;
+    height: 40px;
+}
+
+.leaderboard p{
+    font-size: 25px;
+}
+
+@keyframes flash {
+    50% {
+        background-color: #DDDDDD;
+      }
+}
+@-webkit-keyframes flash {
+    50% {
+        background-color: #DDDDDD;
+      }
+}
